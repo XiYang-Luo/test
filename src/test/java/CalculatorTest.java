@@ -19,4 +19,12 @@ public class CalculatorTest {
         int exceptionRes = 0;
         Assert.assertEquals(exceptionRes, calculateRes);
     }
+
+    @Test
+    public void shouldReturnMutil() throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+        Calculator calculator = new Calculator();
+        int calculateRes = calculator.compute(2,3, "Mutil");
+        int exceptionRes = 6;
+        Assert.assertEquals(exceptionRes, calculateRes);
+    }
 }
